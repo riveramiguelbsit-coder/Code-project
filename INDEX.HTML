@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Grid</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6D7FC7;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .team-section {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .team-section h1 {
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .team-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            grid-column: span 2; 
+        }
+          
+        .cell-5 {
+            grid-column: 4 / span 2; 
+        }
+.        .cell-6 {
+            grid-column: 3 / span 3; 
+        }
+        .cell-7 {
+            grid-column: 3 / span 2; 
+        }
+	 .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            background-color: #ddd; 
+        }
+
+        .team-card h3 {
+            margin: 10px 0 5px;
+            color: #222;
+        }
+
+        .team-card .role {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        
+        @media (max-width: 800px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-card, .cell-5, .cell-6, .cell-7{
+                grid-column: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="team-section">
+        <h1>Meet Our Team Group 5</h1>
+        <!-- 
+		PAKI EDIT NALANG PO!! -->
+
+	<div class="team-grid">
+            <!-- Member 1 -->
+            <div class="team-card">
+                <img src="analiza.jpg" alt="Team Member">
+                <h3>Member 1</h3>
+                <p class="role">PLMUN Student</p>
+                <p>Address: Southville 3 Poblacion, Muntinlupa City
+		   Mobile:  094212345678 </p>
+            </div>
+            <!-- Member 2 -->
+            <div class="team-card">   
+                <img src="margie.jpg" alt="Team Member"> 
+                <h3>John Doe</h3>
+                <p class="role">PLMUN Student</p>
+                <p>Address: Southville 3 Poblacion, Muntinlupa City
+		   Mobile:  094212345678 </p>
+            </div>
+            <!-- Member 3 -->
+            <div class="team-card">
+                <img src="yannie.jpg" alt="Team Member"> 
+                <h3>Sarah Lee</h3>
+                <p class="role">PLMUN Student</p>
+                <p>Address: Southville 3 Poblacion, Muntinlupa City
+		   Mobile:  094212345678 </p>
+            </div>
+            <!-- Member 4 -->
+            <div class="team-card">
+                <img src="ana marie.jpg" alt="Team Member"> 
+                <h3>James Brown</h3>
+                <p class="role">PLMUN Student</p>
+                <p>Address: Southville 3 Poblacion, Muntinlupa City
+		   Mobile:  094212345678 </p>
+            </div>
+            <!-- Member 5 -->
+            <div class="team-card cell-4">
+                <img src="madona.jpg" alt="Team Member"> 
+                <h3>Emma Wilson</h3>
+                <p class="role">PLMUN Student</p>
+                <p>Address: Southville 3 Poblacion, Muntinlupa City
+		   Mobile:  094212345678 </p>
+            </div>
+            <!-- Member 6 -->
+            <div class="team-card cell-6">
+                <img src="nikka.jpg" alt="Team Member"> 
+                <h3>Emma Wilson</h3>
+                <p class="role">PLMUN Student</p>
+                <p>Address: Southville 3 Poblacion, Muntinlupa City
+		   Mobile:  094212345678 </p>
+            </div>
+            <!-- Member 7 -->
+            <div class="team-card cell-7">
+                <img src="miguel.png" alt="Team Member"> 
+                <h3>Miguel O. Rivera</h3>
+                <p class="role">PLMUN Student</p>
+                <p>Address: Southville 3 Poblacion, Muntinlupa City
+		   Mobile:  094212345678 </p>
+            </div>
+	</div>
+       
+</section>
+</body>
+</html>
